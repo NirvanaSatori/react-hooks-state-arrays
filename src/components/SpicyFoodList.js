@@ -11,9 +11,6 @@ function SpicyFoodList() {
     setFoods(newFoodArray)
     console.log(newFood);
   }
-
-
-
   function handleLiClick(id) {
     const newFoodArray = foods.map((food) => {
       if (food.id === id) {
@@ -48,8 +45,7 @@ function SpicyFoodList() {
   
   return (
     <>
-
-    <div>
+    < div>
       <button onClick={handleAddFood}>Add New Food</button>
       <ul>{foodList}</ul>
     </div>
